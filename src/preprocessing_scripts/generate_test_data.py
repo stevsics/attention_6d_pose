@@ -264,15 +264,15 @@ def proccess_real_data_linemod(linemod_folder, init_pose_folder_name, out_folder
 
 if __name__ == '__main__':
 
-    linemod_occlusion_folder = "../resources/pvnet_data/OCCLUSION_LINEMOD"
-    linemod_folder = "../resources/pvnet_data/LINEMOD"
-    out_folder = "/media/data_ssd/Datasets/LINEMOD_Processed"
-    init_pose_folder_name = "../resources/pvnet_data/init_poses/occlusion"
+    linemod_occlusion_folder = "../../resources/pvnet_data/OCCLUSION_LINEMOD"
+    linemod_folder = "../../resources/pvnet_data/LINEMOD"
+    out_folder = "../../resources/datasets"
+    init_pose_folder_name = "../../resources/pvnet_data/init_poses/occlusion"
 
     proccess_real_data_occlusion_linemod(linemod_occlusion_folder, linemod_folder, init_pose_folder_name, out_folder,
                                          each_object_separate=True)
 
-    init_pose_folder_name = "../resources/pvnet_data/init_poses/linemod"
+    init_pose_folder_name = "../../resources/pvnet_data/init_poses/linemod"
 
     proccess_real_data_linemod(linemod_folder, init_pose_folder_name, out_folder, each_object_separate=True)
 
